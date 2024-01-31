@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 800px;
+            height: 500px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        #product-info {
+            text-align: center;
+        }
+
+        #buy-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #buy-button:hover {
+            background-color: #45a049;
+        }
+
+        #user-balance {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        #success-message {
+            color: #4caf50;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        img{
+            width: 200px;
+            height: 250px;
+        ;
+        }
+    </style>
+</head>
+<body>
+
+<header class="list">
+    <h1>商品购买页面</h1>
+</header>
+
+
+<script src="../js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#buy-button').on('click', function () {
+            // 这里可以添加购买逻辑，例如向服务器发送购买请求
+            // 成功购买后，显示成功消息
+            $('#success-message').text('购买成功！');
+        });
+    });
+</script>
+<script src="../js/buy.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.7.1.js"   charset="utf-8"></script>
+</head>
+<body>
+    <form action="loginpage.html" class="login-form">
+        
+    <h1>登录</h1>
+    <span class="wrong">用户名或密码错误，请重新输入</span>
+    <span class="none">该用户不存在</span>
+    <div class="txtb">
+        <input type="text" name="uname" >
+        <span data-placeholder="用户名"></span>
+    </div>
+
+    <div class="txtb">
+        <input type="password" name="upassword" >
+        <span data-placeholder="密码"></span>                                                                                     
+    </div>
+
+    <input type="submit"  class="logbtn" value="登录">
+
+        <div class="bottom-text">
+           还没有账号? <a href="/register">点击注册</a>
+        </div>
+    </form>
+</body>
+  <script >
+       $(".txtb input").on("focus",function(){
+         $(this).addClass("focus");
+       });
+         
+       $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+         $(this).removeClass("focus");
+       });
+  </script>
+  <script src="../js/jquery-3.7.1.js"></script>
+  <script src="../js/login.js"></script>
+</html>
